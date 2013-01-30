@@ -1,0 +1,43 @@
+SRTmerge Copyright 2013 (c) Ariel Nemtzov
+pysrt Copyright (c) Jean Boussier
+
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+libav is also (optionally) used.
+
+####################################################################
+Usage
+####################################################################
+srtmerge.py [-h] [-i INPUTVIDEO1] [-o OFFSET2] [-e ENCODING] input1 input2 output
+
+positional arguments:
+  input1                The first srt file containing the first half of the
+                        original subs
+  input2                The second srt file containing the second half of the
+                        original subs
+  output                The file where the fixed subs should be saved
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUTVIDEO1, --inputVideo1 INPUTVIDEO1
+                        The first video file of the two to combine.
+  -o OFFSET2, --offset2 OFFSET2
+                        Offset of second input file from end of first in
+                        format HH:MM:SS,mmm
+  -e ENCODING, --encoding ENCODING
+                        Encoding of the subtitle files, must be the same.
+                        Default is utf-8.
+
